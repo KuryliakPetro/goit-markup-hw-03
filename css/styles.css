@@ -14,16 +14,50 @@ body {
     
     color: var(--prime-text-color);    
 }
+h1,
+p {
+    margin: 0;
+}
 
 .link {
     text-decoration-line: none;
 }
 .list {
     list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+.section-title {
+    margin-top: 95px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+
+    color: var(--title-text-color);
+}
+
+
+/* Header */
+.header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ECECEC;
 }
 
 /* Logo */
 .logo {
+    margin-right: 95px;
+
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -36,6 +70,21 @@ body {
 }
 
 /* Nav */
+.section-nav {
+    display: flex;
+    align-items: center;
+}
+.site-nav {
+    display: flex;
+}
+.site-nav .item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.site-nav .item {
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
 .nav-link, .contact-link {   
     font-weight: 500;
     line-height: 1.14;
@@ -45,6 +94,13 @@ body {
 }
 .nav-link:hover, :focus {
     color: var(--button-and-hover-color);
+}
+.section-contact {
+    display: flex;
+    margin-left: auto;
+}
+.section-contact .item:not(:last-child) {
+    margin-right: 50px;
 }
 .contact-link {        
     color: var(--prime-text-color);    
@@ -58,13 +114,19 @@ body {
 
 /* Main */
 .hero {
+    text-align: center;
     background-color: var(--prime-background-color);
 }
+/* Section Hero */
 .main-title {
+    width: 696px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;     
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     
@@ -72,6 +134,10 @@ body {
     background-color: #2F303A;
 }
 .button {
+    border-radius: 6px;
+    padding: 10px 32px;
+    border: 0;
+
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -83,15 +149,30 @@ body {
     color: var(--secondary-title-text-color);
     background-color: var(--button-and-hover-color);
 }
-.button:hover {
-    color: var(--title-text-color);
-    background-color: var(--prime-text-color);
-}
 .button:focus {
-    color: var(--title-text-color);
-    background-color: var(--prime-text-color);
+    color: var(--secondary-title-text-color);
+    background-color: var(--button-and-hover-color);
+}
+/* Description */
+.section-description {
+    margin-top: 95px;
+}
+.description-item {
+    display: flex;  
+}
+.description-item .item {
+    display: block;
+    width: calc((100% - 90px) / 4);
+}
+.description-item .item:not(:last-child) {
+    margin-right: 30px;
 }
 .description-title {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+    margin-left: 0;
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -99,27 +180,83 @@ body {
     
     color: var(--title-text-color);
 }
-.section-title {
-    font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    
-    color: var(--title-text-color);
+/* What are we doing */
+.section-capability .section-title {
+    margin-top: 95px;    
+}
+.section-capability .capability-item {
+    display: flex;
+    margin-top: 50px;
+    padding-bottom: 95px;
+}
+.section-capability .item:not(:last-child) {
+    margin-right: 30px;
+}
+/* Team */
+.section-team {
+    background-color: #F5F4FA;
+}
+.section-team .section-title {
+    padding-top: 95px;
+    margin-top: 0;
+}
+.section-team .team-item {
+    display: flex;
+    margin-top: 50px;
+    width: calc((100% - 90px) / 4);
+    padding-bottom: 95px;
+}
+.team-item .item {
+    display: block;
+    border-radius: 4px;
+
+    background-color: var(--secondary-title-text-color);
+    /* border: 1px solid red; */
+}
+.section-team .item:not(:last-child) {
+    margin-right: 30px;
 }
 .team-title {
+    margin-top: 30px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.2;      
+    line-height: 1.2;   
+    text-align: center;   
         
     color: var(--title-text-color);
 }
 .team-text {
+    margin-top: 10px;
+    margin-right: 0;
+    margin-bottom: 30px;
+    margin-left: 0;
+
     font-size: 16px;
     line-height: 1.2;
+    text-align: center;
 }
 
 /* Potfolio-main */
+.section-portfolio {
+    margin-bottom: 95px;
+}
+.filtr {
+    display: flex;
+    justify-content: center;
+}
+.filtr .item:not(:last-child) {
+    margin-right: 10px;
+}
 .filtr-button {
+    margin-top: 95px;
+    padding: 6px 22px;
+    border: 0;
+    border-radius: 6px;
+
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -142,7 +279,29 @@ body {
     color: var(--secondary-title-text-color);
     background-color: var(--button-and-hover-color);
 }
-.card-title {    
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: centr;
+    margin-top: 50px;
+}
+.card .item {
+    display: block;
+    /* margin-right: 30px; */
+    width: calc((100% - 60px) / 3);
+}
+.card .item:not(:nth-child(3n + 3)) {
+    margin-right: 30px;
+}
+.card .item:not(:nth-last-child(-n + 3)) {
+    margin-bottom: 30px;
+}
+.card-title {  
+    margin-top: 20px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 25px; 
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;       
@@ -150,7 +309,13 @@ body {
     
     color: var(--title-text-color);
 }
-.card-text {    
+.card-text {   
+    margin-top: 5px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 25px;
+    padding-bottom: 20px;
+
     font-size: 16px;
     line-height: 1.88;
 
@@ -161,10 +326,23 @@ body {
 .footer {
     background-color: var(--prime-background-color)
 }
-.footer .logo {
-    color: #ffffff;
+.section-footer {
+    display: block;
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+.footer-logo {
+    display: inherit;
+    margin: 0;
+    padding-bottom: 10px;
+      
+   color: #ffffff;
 }
 .address {
+    display: block;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-size: 14px;
@@ -173,6 +351,9 @@ body {
     color: var(--secondary-title-text-color);
 }
 .contact {  
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
     font-style: normal;
 
     color: rgba(255, 255, 255, 0.6);
