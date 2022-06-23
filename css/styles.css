@@ -1,0 +1,198 @@
+:root {
+    --prime-text-color: #757575;
+    --title-text-color: #212121;
+    --secondary-title-text-color: #ffffff;
+    --button-and-hover-color: #2196F3;
+    --prime-background-color: #2F303A;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    
+    color: var(--prime-text-color);    
+}
+
+.link {
+    text-decoration-line: none;
+}
+.list {
+    list-style: none;
+}
+
+/* Logo */
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+
+    color: #000000;    
+}
+.logo-color {
+    color: #2196F3;
+}
+
+/* Nav */
+.nav-link, .contact-link {   
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    
+    color: var(--title-text-color);
+}
+.nav-link:hover, :focus {
+    color: var(--button-and-hover-color);
+}
+.contact-link {        
+    color: var(--prime-text-color);    
+}
+.contact-link:hover, :focus {
+    color: var(--button-and-hover-color); */
+}
+.current {
+    color: var(--button-and-hover-color)
+}
+
+/* Main */
+.hero {
+    background-color: var(--prime-background-color);
+}
+.main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;     
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    background-color: #2F303A;
+}
+.button {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;         
+    align-items: center;
+    text-align: center;
+            
+    color: var(--secondary-title-text-color);
+    background-color: var(--button-and-hover-color);
+}
+.button:hover {
+    color: var(--title-text-color);
+    background-color: var(--prime-text-color);
+}
+.button:focus {
+    color: var(--title-text-color);
+    background-color: var(--prime-text-color);
+}
+.description-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    
+    color: var(--title-text-color);
+}
+.section-title {
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    
+    color: var(--title-text-color);
+}
+.team-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.2;      
+        
+    color: var(--title-text-color);
+}
+.team-text {
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+/* Potfolio-main */
+.filtr-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;     
+    text-align: center;
+    letter-spacing: inherit;
+    
+    color: var(--title-text-color);
+    background-color: #F5F4FA;
+}
+.activ {
+    color: var(--secondary-title-text-color);
+    background-color: var(--button-and-hover-color);
+}
+.filtr-button:hover {
+    color: var(--secondary-title-text-color);
+    background-color: var(--button-and-hover-color);
+}
+.filtr-button:focus {
+    color: var(--secondary-title-text-color);
+    background-color: var(--button-and-hover-color);
+}
+.card-title {    
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;       
+    letter-spacing: 0.06em;
+    
+    color: var(--title-text-color);
+}
+.card-text {    
+    font-size: 16px;
+    line-height: 1.88;
+
+    color: var(--prime-text-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--prime-background-color)
+}
+.footer .logo {
+    color: #ffffff;
+}
+.address {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+
+    color: var(--secondary-title-text-color);
+}
+.contact {  
+    font-style: normal;
+
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #2F303A; 
+}
+.contact:hover, :focus{
+    color: var(--button-and-hover-color);
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
