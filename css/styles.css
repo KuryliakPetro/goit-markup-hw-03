@@ -15,6 +15,7 @@ body {
     color: var(--prime-text-color);    
 }
 h1,
+h2,
 p {
     margin: 0;
 }
@@ -27,6 +28,10 @@ p {
     margin: 0;
     padding: 0;
 }
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .container {
     width: 1200px;
     padding-left: 15px;
@@ -34,7 +39,7 @@ p {
 
 }
 .section-title {
-    margin-top: 95px;
+    margin-top: 0;
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 0;
@@ -155,7 +160,7 @@ p {
 }
 /* Description */
 .section-description {
-    margin-top: 95px;
+
 }
 .description-item {
     display: flex;  
@@ -182,12 +187,12 @@ p {
 }
 /* What are we doing */
 .section-capability .section-title {
-    margin-top: 95px;    
+
 }
 .section-capability .capability-item {
     display: flex;
     margin-top: 50px;
-    padding-bottom: 95px;
+    padding-bottom: 94px;
 }
 .section-capability .item:not(:last-child) {
     margin-right: 30px;
@@ -197,14 +202,14 @@ p {
     background-color: #F5F4FA;
 }
 .section-team .section-title {
-    padding-top: 95px;
+    padding-top: 94px;
     margin-top: 0;
 }
 .section-team .team-item {
     display: flex;
     margin-top: 50px;
     width: calc((100% - 90px) / 4);
-    padding-bottom: 95px;
+    padding-bottom: 94px;
 }
 .team-item .item {
     display: block;
@@ -242,7 +247,6 @@ p {
 
 /* Potfolio-main */
 .section-portfolio {
-    margin-bottom: 95px;
 }
 .filtr {
     display: flex;
@@ -252,7 +256,6 @@ p {
     margin-right: 10px;
 }
 .filtr-button {
-    margin-top: 95px;
     padding: 6px 22px;
     border: 0;
     border-radius: 6px;
@@ -287,8 +290,10 @@ p {
 }
 .card .item {
     display: block;
-    /* margin-right: 30px; */
-    width: calc((100% - 60px) / 3);
+    margin: 0;
+    padding: 0;
+    width: 370px;
+    /* width: calc((100% - 60px) / 3); */
 }
 .card .item:not(:nth-child(3n + 3)) {
     margin-right: 30px;
@@ -297,10 +302,11 @@ p {
     margin-bottom: 30px;
 }
 .card-title {  
-    margin-top: 20px;
+    /* margin-top: 20px; */
     margin-right: 0;
     margin-bottom: 0;
     margin-left: 25px; 
+    padding-top: 20px;
 
     font-weight: 700;
     font-size: 18px;
@@ -320,6 +326,11 @@ p {
     line-height: 1.88;
 
     color: var(--prime-text-color);
+}
+.card-border {
+    box-sizing: border-box;
+    width: 370px;
+    border: 1px solid #EEEEEE;
 }
 
 /* Footer */
